@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { Heart, Trash2 } from 'lucide-react'
-import { cn } from '@/lib/utils'
+import { cn } from '../lib/utils'
 import { formatPrice } from '../utils/format-price'
 // import { Product } from '@/types/product'
 import { QuickViewModal } from './quick-view-modal'
