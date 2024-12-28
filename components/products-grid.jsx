@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { ProductCard } from './product-card'
+import { LoadingScreen } from './loadingUi'
 
 export function ProductsGrid() {
   const [sampleData, setSampleData] = useState([]) // Initialize with an empty array
@@ -24,7 +25,7 @@ export function ProductsGrid() {
 
   // Show a loading spinner while fetching data
   if (loading) {
-    return <div>Loading...</div>
+    return <LoadingScreen />
   }
 
   // Render the grid once the data is available
